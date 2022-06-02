@@ -3,6 +3,7 @@ package com.SofkaU.ddd.performaceEvaluation.ObjectiveDefinition.value;
 import ch.qos.logback.core.joran.conditional.IfAction;
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.awt.*;
 import java.util.Objects;
 
 public class Objective implements ValueObject<String> {
@@ -31,4 +32,6 @@ public class Objective implements ValueObject<String> {
     public int hashCode() {
         return Objects.hash(value);
     }
+
+
 }

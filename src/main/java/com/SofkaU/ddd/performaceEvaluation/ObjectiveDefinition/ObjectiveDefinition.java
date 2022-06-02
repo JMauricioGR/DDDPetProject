@@ -151,7 +151,7 @@ public class ObjectiveDefinition extends AggregateEvent<ObjectiveDefinitionID> {
                 .findFirst();
     }
 
-    protected Optional<Evaluation> bossById(EvaluationID evaluationID){
+    protected Optional<Evaluation> evaluationById(EvaluationID evaluationID){
         return evaluations
                 .stream()
                 .filter(evaluation -> evaluation.identity().equals(evaluationID))
